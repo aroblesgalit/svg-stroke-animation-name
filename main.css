@@ -12,22 +12,50 @@ body {
     align-items: center;
 }
 
+svg {
+    fill: transparent;
+    animation: fill 0.5s ease forwards 3.2s;
+}
+
 svg path:nth-child(1) {
-    stroke-dasharray: 200px;
+    stroke-dasharray: 621.23;
+    stroke-dashoffset: 621.23;
+    animation: stroke-anim 2s ease forwards;
 }
 
 svg path:nth-child(2) {
-    
+    stroke-dasharray: 444.01;
+    stroke-dashoffset: 444.01;
+    animation: stroke-anim 2s ease forwards 0.3s;
 }
 
 svg path:nth-child(3) {
-    
+    stroke-dasharray: 589.07;
+    stroke-dashoffset: 589.07;
+    animation: stroke-anim 2s ease forwards 0.6s;
 }
 
 svg path:nth-child(4) {
-    
+    stroke-dasharray: 325.82;
+    stroke-dashoffset: 325.82;
+    animation: stroke-anim 2s ease forwards 0.9s;
 }
 
 svg path:nth-child(5) {
-    
+    stroke-dasharray: 767.71;
+    stroke-dashoffset: 767.71;
+    animation: stroke-anim 2s ease forwards 1.2s;
+}
+
+
+@keyframes stroke-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    to {
+        fill: #222;
+    }
 }
