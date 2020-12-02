@@ -8,43 +8,54 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-svg {
-    fill: transparent;
+.roboto {
+    margin-bottom: 40px;
     animation: fill 0.5s ease forwards 3.2s;
 }
 
-svg path:nth-child(1) {
+.roboto path:nth-child(1) {
     stroke-dasharray: 621.23;
     stroke-dashoffset: 621.23;
     animation: stroke-anim 2s ease forwards;
 }
 
-svg path:nth-child(2) {
+.roboto path:nth-child(2) {
     stroke-dasharray: 444.01;
     stroke-dashoffset: 444.01;
     animation: stroke-anim 2s ease forwards 0.3s;
 }
 
-svg path:nth-child(3) {
+.roboto path:nth-child(3) {
     stroke-dasharray: 589.07;
     stroke-dashoffset: 589.07;
     animation: stroke-anim 2s ease forwards 0.6s;
 }
 
-svg path:nth-child(4) {
+.roboto path:nth-child(4) {
     stroke-dasharray: 325.82;
     stroke-dashoffset: 325.82;
     animation: stroke-anim 2s ease forwards 0.9s;
 }
 
-svg path:nth-child(5) {
+.roboto path:nth-child(5) {
     stroke-dasharray: 767.71;
     stroke-dashoffset: 767.71;
     animation: stroke-anim 2s ease forwards 1.2s;
+}
+
+.roboto-slab {
+    animation: fill 0.5s ease forwards 6s;
+}
+
+.roboto-slab path {
+    stroke-dasharray: 2983.8;
+    stroke-dashoffset: 2983.8;
+    animation: stroke-anim 15s ease forwards 3.2s;
 }
 
 
@@ -55,6 +66,9 @@ svg path:nth-child(5) {
 }
 
 @keyframes fill {
+    from {
+        fill: transparent;
+    }
     to {
         fill: #222;
     }
